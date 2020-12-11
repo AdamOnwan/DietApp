@@ -1,0 +1,13 @@
+.loginBtn {
+  width: 50%;
+  color: white;
+  background-color: blue;
+}
+.registerBtn {
+  width: 50%;
+  color: white;
+  background-color: blue;
+}
+.incorrectMsg {
+  color: red;
+}

@@ -1,0 +1,41 @@
+Start<br>
+User: {{LoggedInUser}}<br>
+Id: {{LoggedInUser.id}}<br>
+FirstName: {{LoggedInUser.firstName}}<br>
+LastName: {{LoggedInUser.lastName}}<br>
+Email: {{LoggedInUser.email}}<br>
+Password: {{LoggedInUser.password}}<br>
+Phone: {{LoggedInUser.phone}}<br>
+Enabled: {{LoggedInUser.enabled}}<br>
+Role: {{LoggedInUser.role}}<br>
+ImageUrl: {{LoggedInUser.imageUrl}}<br>
+Height: {{LoggedInUser.height}}<br>
+Weight: {{LoggedInUser.weight}}<br>
+Description: {{LoggedInUser.description}}<br>
+Address: {{LoggedInUser.address.address}}<br>
+City: {{LoggedInUser.address.city}}<br>
+State: {{LoggedInUser.address.state}}<br>
+Postal Code: {{LoggedInUser.address.postalCode}}<br>
+Diet: {{LoggedInUser.diet.name}}<br>
+Food:
+<!-- <div *ngFor="let food of foods">
+   {{LoggedInUser.food.name}}
+</div>
+<table>
+  <tr *ngFor="let food of foods">
+    <td>Food Name: {{LoggedInUser.food.id}}</td>
+
+  </tr>
+</table> -->
+<table>
+  <tr *ngFor="let user of users">
+    <td>Email: {{user.email}}</td>
+    <td>firstName: {{user.firstName}}</td>
+    <td>Password: {{user.password}}</td>
+    <td>Address: {{user.address.address}}</td>
+    <td>Diet: {{user.diet.name}}</td>
+  </tr>
+</table>
+
+<br>
+

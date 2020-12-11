@@ -1,0 +1,33 @@
+<div *ngIf="loggedInUser">
+<br>
+<table>
+  <th scope="col">ID</th>
+  <th scope="col">Name</th>
+  <th scope="col">Description</th>
+  <th scope="col">Calorie</th>
+  <th scope="col">Fat</th>
+  <th scope="col">Fiber</th>
+<tr *ngFor="let food of foods" (click)="selectedFood = food;">
+<td>
+{{food.id}}
+</td>
+<td>
+  {{food.name}}
+</td>
+<td>
+  {{food.description}}
+</td>
+<td>
+  {{food.calorie}}
+</td>
+<td>
+  {{food.fat}}
+</td>
+<td>
+  {{food.fiber}}
+</td>
+</tr>
+</table>
+</div>
+
+test

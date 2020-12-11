@@ -1,0 +1,18 @@
+<div class="loginForm">
+  <fieldset>
+    <legend>Please Sign in</legend>
+
+
+  <p class="incorrectMsg" *ngIf="accessDenied">Incorrect, please try again or register</p>
+  <form #loginForm="ngForm">
+  Email: <input type="email" placeholder="email" name="email" ngModel />
+  Password: <input type="password" placeholder="password" name="password" ngModel />
+  <br>
+  <input class="loginBtn" type="submit" name="login" value="Login" (click)="login(loginForm)" />
+</form>
+</fieldset>
+</div>
+<fieldset>
+  <legend>Register to become a user</legend>
+  <button class="registerBtn" [routerLink]="['/register']" routerLinkActive="router-link-active">Register</button>
+</fieldset>

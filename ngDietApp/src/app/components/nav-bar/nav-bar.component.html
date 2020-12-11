@@ -1,0 +1,16 @@
+<header>
+  <div class="container">
+    <a [routerLink]="['/home']" class="logo">DietApp {{email}}</a>
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/users']" *ngIf="userLogInCheck()">Profile</a></li>
+        <li><a [routerLink]="['/foods']">Food</a></li>
+        <li><a [routerLink]="['/recipes']">Recipes</a></li>
+        <li><a [routerLink]="['/login']" *ngIf="!userLogInCheck()">Login</a></li>
+        <li><a [routerLink]="['/register']" *ngIf="!userLogInCheck()">Register</a></li>
+        <li><a [routerLink]="['/home']" (click)="logout()" *ngIf="userLogInCheck()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
